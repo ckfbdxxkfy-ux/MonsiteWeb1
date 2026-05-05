@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicodeme KOUASSI - Web Designer Junior</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0f1c, #05070f);
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+nav h2 { color: #2f6bff; }
+nav a { color: white; margin-left: 20px; text-decoration: none; }
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero h1 { font-size: 60px; }
+.hero span { color: #2f6bff; }
+
+.btn {
+    padding: 12px 25px;
+    background: #2f6bff;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+.section { padding: 80px 10%; }
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #2f6bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>NK</h2>
+    <div>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>Nicodeme <span>KOUASSI</span></h1>
+        <p>Web Designer Junior – Designs modernes et impactants.</p>
+        <a href="#contact" class="btn">Me contacter</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="card">
+        <h2>À propos</h2>
+        <p>Passionné par le web design, je crée des interfaces modernes et efficaces.</p>
+
+        <br>
+
+        <p>📧 nicodeme.kouassi1998@gmail.com</p>
+        <p>📱 0770205210</p>
+        <p>🌐 www.nicodemekouassi.com</p>
+        <p>📍 France</p>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2>Services</h2>
+
+    <div class="card">Création de sites web</div>
+    <div class="card">UI/UX Design</div>
+    <div class="card">Branding digital</div>
+    <div class="card">Design responsive</div>
+</section>
+
+<section id="contact" class="section">
+    <div class="card">
+        <h2>Contact</h2>
+
+        <!-- FORMULAIRE FONCTIONNEL -->
+        <form action="https://formspree.io/f/xojrdpdq" method="POST">
+            
+            <label>Email :</label>
+            <input type="email" name="email" required>
+
+            <label>Message :</label>
+            <textarea name="message" rows="5" placeholder="Votre besoin..." required></textarea>
+
+            <!-- Anti-spam -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit" class="btn">Envoyer</button>
+
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Nicodeme KOUASSI
+</footer>
+
+</body>
+</html>
